@@ -25,3 +25,6 @@ def index(request):
     scraper = StockMarketScraper()
     response = scraper.run(site)
     return HttpResponse(str(response))
+
+def test(request):
+    return HttpResponse("str(response)")
