@@ -1,1 +1,1 @@
-web: gunicorn soltrak.wsgi --log-file -bs4==0.0.1
+web: gunicorn soltrak.wsgi --log-file- -bs4==0.0.1
