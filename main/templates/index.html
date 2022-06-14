@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>SOL Tracker - Sastouma</title>
+        <link rel="stylesheet" type="text/css" href="/static/main.css">
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="/static/watchlist.js"></script>
+        <script src="/static/helper_functions.js"></script>
+        <div id="test" style="display: none;">0</div>
+        <div class="actual_wl" id="actual_wl">
+            <div class="wl_item totals">
+                <span class="fl collection_name">Loading data...</span>
+            </div>
+        </div>
+        <button class="refresh_button" onclick="project_specific_refresh_caller();">Refresh</button>
+        <div class="watchlist_container" id="watchlist_container">
+            <textarea id="watchlist">Collection!entry price!alarm price
+gemmy!1.5!3
+ghost_kid_dao!1.55!4
+zenjin_bottle!0.95!1.8
+zenjinviperz!4.5!11
+mellowmen!1.4!3.4
+tiny_dogz!1.2!1.8
+tiny_pupz!1.5!2
+ohmygirls!0.56!1.2
+wallet_balance!4
+original_sol_balance!23.6</textarea>
+            <button id="watchlist_button" onclick="update_wl();">Update list</button>
+        </div>
+        <div class="ticket">
+            <span>If you use this tool a lot, send SOL fam </span>
+            <span class="t1">(3WnQ...7qgp)</span>
+            <span class="t2">3WnQhiwyAU83zY8QZaMsyW7wirWGgTeLYcRu9dyi7qgp</span>
+        </div>
+    </body>
+</html>

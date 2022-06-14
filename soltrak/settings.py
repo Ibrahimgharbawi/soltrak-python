@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0n#s3h1qsuqj4mzfw^)af@6uktm1azwr4yeopws7d*qkcwx1gx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'soltrak.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['main/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -118,6 +118,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    '/var/www/static/',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

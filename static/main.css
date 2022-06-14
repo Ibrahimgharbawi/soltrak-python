@@ -1,0 +1,152 @@
+body{
+    font-family: Tahoma, sans-serif;
+}
+
+.watchlist_container{
+    width: 300px;
+    position: relative;
+    float: right;
+}
+.watchlist_container textarea{
+    display: block;
+    width: 100%;
+    height: 400px;
+    border-radius: 0;
+    border-color: rgb(191, 191, 191);
+    margin: 10px 0;
+    font-size: 14px;
+}
+.watchlist_container button{
+    float: right;
+    border-radius: 0;
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 800;
+}
+.watchlist_container button:hover{
+    color: #000;
+    background-color: #fff;
+}
+.actual_wl{
+    width: 530px;
+    position: relative;
+    float: left;
+}
+.wl_item{
+    position: relative;
+    border: #000 2px solid;
+    padding: 7px;
+    margin: 5px;
+}
+.wl_item:hover{
+    color: #fff;
+    background-color: #000;
+}
+.totals{
+    color: #fff;
+    background-color: #000;
+}
+.wl_item span{
+    border-right: rgb(121, 116, 116) 1px solid;
+    padding: 0 4px;
+}
+.collection_profit{
+    border-right: none !important;
+}
+.fl{
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+}
+.collection_name{
+    width: 295px;
+    text-align: left;
+}
+.positive{
+    font-weight: bolder;
+    color: green;
+}
+.negative{
+    font-weight: bolder;
+    color: red;
+}
+.t2{
+    display: none;
+}
+.ticket{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    background: #000;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.ticket:hover .t1{
+    display: none;
+}
+.ticket:hover .t2{
+    display: inline-block;
+}
+.alarm {
+    -webkit-animation: NAME-YOUR-ANIMATION 1.5s infinite;  /* Safari 4+ */
+    -moz-animation: NAME-YOUR-ANIMATION 1.5s infinite;  /* Fx 5+ */
+    -o-animation: NAME-YOUR-ANIMATION 1.5s infinite;  /* Opera 12+ */
+    animation: NAME-YOUR-ANIMATION 1.5s infinite;  /* IE 10+, Fx 29+ */
+  }
+  
+  @-webkit-keyframes NAME-YOUR-ANIMATION {
+    0%, 49% {
+      background-color: rgb(48, 83, 52);
+      color: #fff;
+    }
+    50%, 100% {
+      background-color: rgb(253, 255, 200);
+      clear: #000;
+    }
+  }
+.loader{
+    position: absolute;
+    opacity: 0.8;
+    bottom: 8px;
+    right: -31px;
+    height: 15px;
+    width: auto;
+}
+.melink, .sol_sniper_link{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    left: 285px;
+    top: 11px;
+    opacity: 0;
+}
+.melink{
+    left: 263px !important;
+}
+.melink img, .sol_sniper_link img{
+    height: 12px;
+    width: auto;
+}
+.wl_item:hover a{
+    opacity: 1;
+}
+.refresh_button{
+    border-radius: 0;
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 800;
+    float: left;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.refresh_button:hover{
+    color: #000;
+    background-color: #fff;
+}

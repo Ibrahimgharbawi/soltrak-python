@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import cfscrape
+from django.http import JsonResponse
 
 class StockMarketScraper:
     s = cfscrape.create_scraper(delay=3)
@@ -20,11 +21,16 @@ class StockMarketScraper:
             return 'Something has gone wrong, please check url'
 
 def index(request):
-    site = request.GET['url_to_call']
+    site = ''
+    try:
+        site = request.GET['url_to_call']
+    except:
+        return render(request, 'index.html')
     #return HttpResponse(site)
     scraper = StockMarketScraper()
     response = scraper.run(site)
-    return HttpResponse(str(response))
+    floor = response['results']['floorPrice']/1000000000
+    return HttpResponse(str(floor))
 
 def test(request):
     return HttpResponse("str(response)")
